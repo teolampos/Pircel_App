@@ -1,0 +1,35 @@
+$gray: rgb(226, 223, 223);
+
+.container {
+  min-width: 100%;
+  padding: 14px;
+  border: 1px solid $gray;
+  border-radius: 10px;
+  box-shadow: $gray 1px 3px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animal {
+  font-size: 14px;
+}
+
+.gradient {
+  min-width: 100%;
+  min-height: 20px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+}

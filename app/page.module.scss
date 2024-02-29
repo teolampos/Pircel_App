@@ -1,0 +1,65 @@
+.loadingPage,
+.errorPage,
+.homePage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.spinner {
+  border: 5px dotted black;
+  border-radius: 30rem;
+  width: 50px;
+  min-height: 50px;
+  animation: spin 2s linear 0s infinite normal;
+}
+
+.loadingText {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(260deg);
+  }
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.retry {
+  min-width: 20%;
+  padding: 7px;
+  font-size: 17px;
+  color: white;
+  background-color: rgb(212, 93, 93);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.houseList {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
