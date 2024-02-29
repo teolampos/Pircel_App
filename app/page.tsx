@@ -2,7 +2,7 @@ import HouseItem from "./components/HouseItem";
 import styles from "./page.module.scss";
 
 export default async function Home() {
-  const res = await fetch(`${process.env.API_URL}`);
+  const res = await fetch(`${process.env.API_URL}/houses`);
   const houses = await res.json();
 
   return (
